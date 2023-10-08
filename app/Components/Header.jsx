@@ -7,7 +7,7 @@ const Header = ({ page }) => {
   const { setModal, handleSort } = useContext(ProductContext);
 
   return (
-    <div className=' select-none bg-bgcolor flex justify-between fixed top-0 left-0 right-0 z-50 py-10 px-10 md:py-10 md:px-28 w-screen'>
+    <div className='select-none bg-bgcolor flex justify-between fixed top-0 left-0 right-0 z-50 py-6 px-10 md:py-10 md:px-28 w-screen'>
       <div className=' text-2xl md:text-4xl font-bold text-blue-700'>xmart</div>
       {page ?
         <>
@@ -22,7 +22,7 @@ const Header = ({ page }) => {
             </button>
           </div>
         </>
-        : <Link href={'/'} className='px-10 py-2 bg-blue-600 rounded-lg text-sm text-white font-semibold'> Back</Link>}
+        : <Link href={'/'} className='flex items-center px-10 py-2 bg-blue-600 rounded-lg text-sm text-white font-semibold'> Back</Link>}
 
 
     </div>
