@@ -43,10 +43,6 @@ export const ProductProvider = ({ children }) => {
   const handleDelete = (id) => {
     setProducts(products.filter(x => x.id != id))
   }
-   
-  const contextValues={
-    
-  }
 
   return (
     <ProductContext.Provider value={{ products, setProducts, modal, setModal, handleSort, handleDelete, loading }}>
